@@ -44,7 +44,7 @@ linkedin_urls = [url.text for url in linkedin_urls ]
 sleep(0.5)
 
 for linkedin_url in linkedin_urls:
-	driver,get(linkedin_url)
+	driver.get(linkedin_url)
 	sleep(5)
 
 	sel = Selector(text=driver.page_source)
